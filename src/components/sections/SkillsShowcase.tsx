@@ -27,8 +27,12 @@ export function SkillsShowcase() {
   return (
     <Section id="skills" title="My Skills" subtitle="A glimpse into my technical toolkit and expertise.">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
-        {skills.map((skill) => (
-          <Card key={skill.name} className="text-center hover:shadow-xl transition-shadow duration-300 ease-in-out group bg-card/80 backdrop-blur-sm">
+        {skills.map((skill, index) => (
+          <Card 
+            key={skill.name} 
+            className="text-center hover:shadow-xl transition-shadow duration-300 ease-in-out group bg-card/80 backdrop-blur-sm animate-in fade-in zoom-in-95 duration-500 ease-out"
+            style={{ animationDelay: `${index * 50}ms` }}
+          >
             <CardHeader className="p-4 pb-2">
               <skill.icon className="mx-auto h-10 w-10 text-primary group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
             </CardHeader>

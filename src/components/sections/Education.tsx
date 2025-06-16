@@ -47,7 +47,11 @@ export function Education() {
     <Section id="education" title="Education & Certifications" subtitle="My academic background and professional qualifications.">
       <div className="space-y-8">
         {educationItems.map((item, index) => (
-          <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out bg-card/80 backdrop-blur-sm">
+          <Card 
+            key={index} 
+            className="overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out bg-card/80 backdrop-blur-sm animate-in fade-in slide-in-from-left-8 duration-700 ease-out"
+            style={{ animationDelay: `${index * 100}ms` }}
+          >
             <CardHeader className="flex flex-row items-start gap-4 p-6 bg-muted/30">
               <div className="bg-primary text-primary-foreground p-3 rounded-full">
                 {item.type === "education" ? <GraduationCap className="h-6 w-6" /> : <Award className="h-6 w-6" />}

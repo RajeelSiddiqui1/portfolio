@@ -73,8 +73,12 @@ export function GitHubProjects() {
   return (
     <Section id="projects" title="My Projects" subtitle="A selection of projects I've worked on. More on my GitHub!">
       <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
-        {projects.map((project) => (
-          <Card key={project.id} className="flex flex-col overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out bg-card/80 backdrop-blur-sm">
+        {projects.map((project, index) => (
+          <Card 
+            key={project.id} 
+            className="flex flex-col overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out bg-card/80 backdrop-blur-sm animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out"
+            style={{ animationDelay: `${index * 100}ms` }}
+          >
             {project.image_url && (
               <div className="aspect-video overflow-hidden">
                 <Image 
@@ -130,7 +134,7 @@ export function GitHubProjects() {
         ))}
       </div>
       <div className="mt-12 text-center">
-        <Button size="lg" asChild className="transition-all duration-300 hover:scale-105">
+        <Button size="lg" asChild className="transition-all duration-300 hover:scale-105 animate-in fade-in zoom-in-95 duration-500 ease-out delay-300">
           <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
              <Github className="mr-2 h-5 w-5" /> Visit My GitHub
           </a>

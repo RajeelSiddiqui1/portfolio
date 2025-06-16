@@ -15,11 +15,11 @@ export function Section({ children, title, subtitle, className, id, ...props }: 
       <Container>
         {title && (
           <div className="mb-12 text-center">
-            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary">
+            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary animate-in fade-in slide-in-from-top-5 duration-500 ease-out">
               {title}
             </h2>
             {subtitle && (
-               <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
+               <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-in fade-in slide-in-from-top-5 duration-500 ease-out delay-100">
                 {subtitle}
               </p>
             )}

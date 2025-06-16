@@ -9,13 +9,13 @@ export function AboutMe() {
     <Section id="about" title="About Me" subtitle="A little bit about my journey and passion for technology.">
       <div className="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
         <div className="md:col-span-1 flex justify-center">
-          <Avatar className="w-48 h-48 md:w-64 md:h-64 border-4 border-primary shadow-lg">
+          <Avatar className="w-48 h-48 md:w-64 md:h-64 border-4 border-primary shadow-lg animate-in fade-in zoom-in-90 duration-500 ease-out">
             <AvatarImage src="https://placehold.co/256x256.png" alt="Astra" data-ai-hint="professional portrait" />
             <AvatarFallback>AP</AvatarFallback>
           </Avatar>
         </div>
         <div className="md:col-span-2">
-          <Card className="bg-card/80 backdrop-blur-sm shadow-xl">
+          <Card className="bg-card/80 backdrop-blur-sm shadow-xl animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out delay-200">
             <CardContent className="p-6 md:p-8">
               <h3 className="font-headline text-2xl font-semibold mb-4 text-primary">Hello, I&apos;m Astra!</h3>
               <p className="text-lg text-foreground/90 mb-4 leading-relaxed">
