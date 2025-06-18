@@ -39,7 +39,7 @@ export function Navbar() {
       <Container>
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="text-2xl font-headline font-bold text-primary hover:text-primary/80 transition-colors">
-            Astra
+            MRS Portfolio
           </Link>
 
           <nav className="hidden md:flex items-center space-x-6">
