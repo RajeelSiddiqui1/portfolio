@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import ThemeProvider from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: 'Astra Portfolio',
+  title: 'Rajeel Siddiqqui',
   description: 'My Personal Portfolio',
 };
 

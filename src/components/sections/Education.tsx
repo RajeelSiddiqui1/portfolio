@@ -14,34 +14,40 @@ interface EducationItem {
 const educationItems: EducationItem[] = [
   {
     type: "education",
-    title: "Master of Science in Computer Science",
-    institution: "University of Advanced Technology",
-    date: "2020 - 2022",
-    description: "Specialized in Web Development and Software Engineering. Thesis on scalable frontend architectures.",
+    title: "Diploma in Web Development",
+    institution: "Aptech",
+    date: "2024 - Present",
+    description: "Currently pursuing a comprehensive program focused on modern web development technologies, including HTML, CSS, JavaScript, and full-stack frameworks.",
   },
   {
     type: "education",
-    title: "Bachelor of Science in Information Technology",
-    institution: "Tech State University",
-    date: "2016 - 2020",
-    description: "Graduated with honors. Focus on software development fundamentals and database management.",
+    title: "Agentic (Artificial Intelligence) Course",
+    institution: "PIAIC (Presidential Initiative for Artificial Intelligence and Computing)",
+    date: "2024 - Present",
+    description: "Enrolled in a 6-quarter program, with 1 quarter completed and currently in the second quarter, learning AI concepts and practical applications.",
   },
   {
-    type: "certification",
-    title: "Certified Next.js Developer",
-    institution: "Vercel Academy",
-    date: "Issued Jan 2023",
-    description: "Completed comprehensive training and examination on Next.js development practices.",
+    type: "education",
+    title: "Intermediate in Computer Science (ICS)",
+    institution: "Board of Intermediate Education, Karachi",
+    date: "2023 - 2025",
+    description: "Completed the second year of Intermediate studies with a focus on computer science fundamentals.",
   },
   {
-    type: "certification",
-    title: "Professional Scrum Master™ I (PSM I)",
-    institution: "Scrum.org",
-    date: "Issued Mar 2022",
-    description: "Demonstrated a fundamental level of Scrum mastery.",
+    type: "education",
+    title: "Matriculation",
+    institution: "Alkamran Public School",
+    date: "2021 - 2022",
+    description: "Completed secondary education with a strong academic foundation, preparing for further studies in technology.",
+  },
+  {
+    type: "education",
+    title: "Hifz-ul-Quran",
+    institution: "Local Islamic Institute",
+    date: "Completed 2021",
+    description: "Memorized the Quran, demonstrating discipline and dedication to learning.",
   },
 ];
-
 export function Education() {
   return (
     <Section id="education" title="Education & Certifications" subtitle="My academic background and professional qualifications.">

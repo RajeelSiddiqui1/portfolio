@@ -11,16 +11,22 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: "JavaScript (ES6+)", icon: Code2, level: "Advanced" },
-  { name: "React & Next.js", icon: Layers, level: "Advanced" },
+  
   { name: "HTML5 & CSS3", icon: Palette, level: "Advanced" },
+  { name: "JavaScript (ES6+)", icon: Code2, level: "Advanced" },
+  { name: "React.js", icon: Layers, level: "Advanced" },
+  { name: "Next.js", icon: Layers, level: "Intermediate" },
+  { name: "Bootstrap", icon: Palette, level: "Advanced" },
   { name: "Tailwind CSS", icon: Wind, level: "Advanced" },
+  { name: "Django", icon: Server, level: "Intermediate" },
   { name: "Node.js & Express", icon: Server, level: "Intermediate" },
+  { name: "MySQL", icon: Database, level: "Intermediate" },
+  { name: "MongoDB", icon: Database, level: "Intermediate" },
   { name: "Git & GitHub", icon: GitFork, level: "Advanced" },
-  { name: "Responsive Design", icon: MonitorSmartphone, level: "Advanced" },
-  { name: "Web Development", icon: Globe, level: "Expert" },
-  { name: "UI/UX Principles", icon: DraftingCompass, level: "Intermediate" },
-  { name: "Databases (SQL/NoSQL)", icon: Database, level: "Intermediate" },
+  { name: "Python", icon: Code2, level: "Intermediate" },
+  { name: "RESTful APIs", icon: Globe, level: "Intermediate" },
+  { name: "UI/UX Design", icon: DraftingCompass, level: "Intermediate" }
+
 ];
 
 export function SkillsShowcase() {
