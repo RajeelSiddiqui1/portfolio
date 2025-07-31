@@ -83,6 +83,17 @@ const mockProjects: Project[] = [
     forks_count: 10,
     image_url: "/image/ecommerce.png",
   },
+  {
+    id: 7,
+    name: "AI Customer Support Assistant",
+    description: "A caht bot which i amke in streamlit by uisng openai-agent sdk",
+    html_url: "",
+    language: "Python",
+    stargazers_count: 55,
+    forks_count: 10,
+    image_url: "/image/chatbot.png",
+     live_demo_url: "https://openai-agent-sdk-crashcourse-3xv3pewrs6ibj4vwv9rwsb.streamlit.app/",
+  },
 ];
 
 export function GitHubProjects() {
